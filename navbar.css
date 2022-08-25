@@ -61,13 +61,18 @@
            align-items: center;
            padding: 10px;
        }
+       #wp ~ div:hover
+       {
+        cursor: pointer;
+        background-color: rgb(245, 239, 239);
+       }
         /* NAVBAR */
        #footer
        {
         width: 100%;
         height: 100px;
         /* margin-top: 10px; */
-        position: sticky;
+        position: fixed;
         bottom: 0px;
         top: 620px;
         text-align: center;
@@ -189,13 +194,14 @@
         box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
         width: 50%;
         margin: auto;
-        height: 120px;
+        height: 130px;
         border-radius: 10px;
         color: grey;
         background-color: white;
         position: absolute;
+        z-index:1;
         left: 350px;
-        top:550px;
+        top:650px;
     }
     .dnt
     {
@@ -216,13 +222,14 @@
     {
         margin-left: 30%;
         width: 70%;
-        height: 90%;
+        height: 100%;
         border-radius: 10px;
     }
    #dnt_mid
     {
         width: 350px;
         line-height: 15px;
+        color: rgb(205,205,205);
     }
     #dnt_mid > h4
     {
@@ -450,4 +457,176 @@
         font-size: 20px;
         font-family: 'Poppins', sans-serif;
        color: rgb(67,67,67);
+    }
+    #story
+    {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 80%;
+        margin: auto;
+        height: 400px;
+        border-radius: 10px;
+        display: flex;
+    }
+    #story>div
+    {
+        height: 100%;
+        width: 50%;
+    }
+    #story>div>img
+    {
+        height: 100%;
+        border-radius: 10px;
+    }
+    #story>div+div
+    {
+        width: 45%;
+        height: 80%;
+        margin: auto;
+        font-family: 'Poppins', sans-serif;
+       color: rgb(67,67,67);
+    }
+    #story>div+div>p
+    {
+        font-size: 17px;
+        line-height: 22px;
+    }
+    .Child_div
+    {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-evenly;
+        height: 25px;
+        align-items: center;
+    }
+    .Child_div>div
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid rgb(37,211,102);
+        color:rgb(37,211,102);
+        justify-content: space-evenly;
+        width: 120px;
+        height: 100%;
+        padding: 5px;
+        border-radius: 20px;
+    }
+    .Child_div>div:hover
+    {
+        cursor: pointer;
+        color: white;
+        background-color:rgb(37,211,102); ;
+    }
+    .Child_div>p
+    {
+        color: rgb(174, 170, 170);
+    }
+    .btn_succ
+    {
+        color: rgb(41,201,200);
+        border: 0px;
+        background-color: white;
+    }
+    .btn_succ:hover
+    {
+        cursor: pointer;
+        color: blue;
+        border: 1px solid blue
+    }
+    #question_Ask
+    {
+        /* border: 2px solid black; */
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 80%;
+        margin: auto;
+        margin-top: 70px;
+    }
+    #question_Ask>div
+    {
+        justify-content: space-around;
+        color:white;
+        background-color: rgba(66, 103, 178);
+        padding: 10px;
+        border-radius: 20px;
+    }
+    #question_Ask>div:hover
+    {
+        cursor: pointer;
+        background-color: rgb(59, 89, 152);
+    }
+    #question_Ask>div>i
+    {
+        margin-right: 10px;
+    }
+    #question_Ask>div+div
+    {
+        background-color:rgb(37,211,102); 
+    }
+    #question_Ask>div+div:hover
+    {
+        background-color: #13cb6a;
+    }
+
+
+    #footer_bottom
+    {
+        background-color: rgb(11,67,65);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    #footer_bottom>p
+    {
+        text-align: center;
+        font-size: 15px;
+        padding-bottom: 20px;
+    }
+    #footer_bottom>div
+    {
+    
+        width: 80%;
+        height: 500px;
+        display: grid;
+        margin: auto;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(1,400px);
+    }
+    #footer_bottom>div>div
+    {
+        width: 160px;
+        margin-top: 50px;
+    }
+    #footer_bottom>div>div:nth-child(1)
+    {
+        line-height: 10px;
+      margin-right: 50px;
+        width:310px;
+    }
+    #footer_bottom>div>div>img
+    {
+        width: 40%;
+        margin: 0px 100px 30px 10px;
+    }
+    hr
+    {
+        background-color:2px solid white;
+        margin: -10px 0px 30px 0px;
+    }
+    #footer_bottom>div>div>div>i
+    {
+        font-size: 40px;
+        color: white;
+        margin: auto;
+        margin:0px 5px 20px 5px;
+    }
+    .contact
+    {
+        margin-top: 50px;
+    }
+    .footer_icon
+    {
+        border: 2px solid red;
+        height: 50px;
     }
