@@ -198,10 +198,10 @@
         border-radius: 10px;
         color: grey;
         background-color: white;
-        position: absolute;
-        z-index:1;
+        /* position: absolute; */
+        /* z-index:1;
         left: 350px;
-        top:650px;
+        top:650px; */
     }
     .dnt
     {
@@ -630,3 +630,284 @@
         border: 2px solid red;
         height: 50px;
     }
+    .know_more
+    {
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+         /* color: rgb(174, 170, 170); */
+    }
+    .Tending+p
+    {
+        text-align: center;
+    }
+    #scroll_trending
+    {
+        margin: auto;
+        height: 420px;
+        width: 350px;
+        border-radius: 10px;
+      font-family: 'Poppins', sans-serif;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+       margin-bottom: 70px;
+    }
+    #scroll_trending>div
+    {
+        width: 100%;
+        height: 45%;
+    }
+    #scroll_trending>div>img
+    {
+        width: 100%;
+        height: 100%;
+    }
+    #scroll_trending>img
+    {
+        border-radius: 50px;
+        width: 40px;
+    }
+    #scroll_trending > .scroll_name
+    {
+        height: 10%;
+        display: flex;
+        align-items: center;
+    }
+    #scroll_trending > .scroll_name>img
+    {
+        width: 8%;
+        height: 30px;
+        border-radius: 50px;
+        margin: 0px 20px;
+    }
+    #scroll_trending>span
+    {
+        height: 10px;
+        display: flex;
+        align-items: center;
+        margin:-5px 10px 0px 0px  ;
+        padding: 15px;
+        color: gray;
+    }
+    #scroll_trending>span
+    {
+        margin-left: 10px;
+        color: rgb(68,68,68);        
+    }
+    #scroll_trending>span>p
+    {
+        color: rgb(174, 170, 170);
+       margin-left: 5px;
+       font-size: 17px;
+    }
+    #scroll_trending>h4
+    {
+        height: 10px;
+        margin:15px 10px;
+    }
+    #scroll_trending>.trending_rupey
+    {
+        display: flex;
+        color: rgb(174, 170, 170);
+        font-size: 15px;
+        height: 5px;
+        margin-top: 0px;
+    }
+    #scroll_trending>.days
+    {
+        display: flex;
+        height: 10px;
+    }
+    .days>div
+    {
+        display: flex;
+        align-items: center;
+        margin: 10px 20px;
+    }
+    .days>div>p
+    {
+        color: grey;
+    }
+    .days>div>i
+    {
+        margin-right: 5px;
+    }
+    .days>div~div>i
+    {
+        color: red;
+    }
+    #scroll_trending>.scroll_icon
+    {
+        width: 100%;
+        height: 40px;
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+    }
+    #scroll_trending>.scroll_icon>button
+    {
+        width: 40%;
+        color: blue;
+        font-size: 17px;
+        padding: 5px;
+        border-radius: 7px;
+        border: 1px solid blue;
+        background-color: white;
+    }
+    #scroll_trending>.scroll_icon>button~button
+    {
+       color: white;
+       background-color: rgb(1,191,189);
+       border: 0px;
+    }
+    #scroll_trending~p
+    {
+        text-align: center;
+    }
+
+
+              /* sign in */
+    .login
+    {
+        margin: auto;
+        margin-top: 100px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+        border-radius: 10px;
+        text-align: center;
+        width: 400px;
+        height: 450px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        color: rgb(106, 103, 103);
+    }
+    .login>form
+    {
+         margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 80%;
+    }
+    .login>form>input
+    {
+        height: 30px;
+        margin: 15px 0px;
+    }
+    .login>form>input~input
+    {
+        background-color: rgb(1, 191, 189);
+        height: 50px;
+        font-size: 20px;
+        color: white;
+        border: 0px;
+        border-radius: 10px;
+    }
+ 
+    .login>button
+    {
+        border: 0px;
+        background-color: white;
+        border:0px;
+        color: rgb(1, 191, 189);
+    }
+    .login>form>input~input:hover
+    {
+        cursor: pointer;
+        background-color:rgb(6, 163, 161);
+    }
+    .login>h3>a
+    {
+        border: 0px;
+        color: rgb(1, 191, 189);
+        background-color: white;
+        font-size: 17px;
+        text-decoration: none;
+    }
+    .login>h5>button
+    {
+        border: 0px;
+        background-color: white;
+        color: rgb(1, 191, 189);
+    }
+    .login >.google
+    {
+        border: 2px solid black;
+        height: 50px;
+    }
+    .create_acc
+    {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 25%;
+        /* padding: 2%; */
+        height: 520px;
+        margin: auto;
+        margin-top: 100px;
+    }
+    .create_acc>button
+    {
+        display: grid;
+    }
+    .create_acc>form
+    {
+        display: grid;
+        grid-template-rows: repeat(6,30px);
+        width: 90%;
+        gap: 20px;
+        margin: auto;
+    }
+    .create_acc>form>input
+    {
+        border: 0px;
+        border-bottom: 1px solid grey;
+    }
+    .create_acc>form>label
+    {
+        color: grey;
+        font-size: 15px;
+        margin: 0px 5px;
+    }
+    .create_acc>form>label:nth-child(1)
+    {
+        margin: 25px 5px 0px 5px;
+    }
+    .create_acc>h3
+    {
+        text-align: center;
+        color: grey;
+        
+    }
+    .create_acc>h3>a
+    {
+        color: rgb(1, 191, 189);
+        text-decoration: none;
+    }
+    .create_acc>form>.next
+    {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:rgb(15, 225, 221);
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+        border: 0px; 
+        /* text-decoration: none; */
+    }
+    #treatment
+    {
+        margin: auto;
+        border: 0px;
+        border-radius: 35px;
+        padding: 0px 20px;
+        color: grey;
+    }
+    .next:hover
+    {
+        cursor: pointer;
+        background-color: deepskyblue;
+    }
+   
+   
+   

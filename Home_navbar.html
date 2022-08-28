@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crowdfunding India - Best Crowd</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="navbar.css">
+    <!-- font awesome -->
     <script src="https://kit.fontawesome.com/3a6065f609.js" crossorigin="anonymous"></script>
     <link style="color: black;" rel="icon" href="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXbk3-vifU9eR19dvbXDscl00z33TPH5dok0QR-77a0Rq6ZHR7">
+    <!-- swippper  -->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     
 </head>
 <body>
@@ -35,7 +38,8 @@
        <div id="Left_nav">
             <div id="wp"><i class="fa-brands fa-whatsapp"></i><p>Chat</p></div>
             <div><p>Start a Fundraiser</p></div>
-            <p href >Sign In</p>     
+            <!-- <p>Sign In</p>      -->
+            <a href="sign_in.html" style="text-decoration: none; color: green;">Sign in</a>
        </div>
     </div>
     <!-- NAVBAR -->
@@ -72,17 +76,40 @@
         </div>
     </div>
     <div class="donate">
-        <div class="dnt" >Donate Now > </div>
+        <div class="dnt" >Donate Now  </div>
         <div id="dnt_mid">
             <h4>Start Monthly Donating To save Lives</h4>
             <p>With your support, countless children will receive health care and a happy life. Start your monthly donation today.</p>
         </div>
         <div><img src="https://kettocdn.gumlet.io/media/banner/0/92/image/81d7a1a7626397c32f6c1fb83bfdf476ccd734af.png?w=720&dpr=1.3" alt=""></div>
     </div>
+
+<!-- Swipper-->
     <div class="Tending">
         <h1 class="head">Trending Fundraisers</h1>
         <p>View the fundraisers that are the most active right now</p>
     </div>
+    
+    <div id="scroll_trending" >
+        <div>
+            <img src="https://kettocdn.gumlet.io/media/campaign/372000/372126/image/wid01ce2a07f56735f26b62aac7c317696e57f1c3f9.png?w=320&dpr=1.3" alt="">
+        </div>
+        <h4>Help 7yrs old Paarnikka beat Cancer</h4>
+        <div class="scroll_name"><img src="https://kettocdn.gumlet.io/media/individual/3931000/3931537/image/61d01756407c7.jpg?w=50&dpr=1.3" alt=""><p>by Rm Agarwal</p></div>
+        <span><i class="fa-solid fa-indian-rupee-sign"></i><h4>1,06,00,309</h4><p>raised out of</p></span>
+        <span class="trending_rupey"><i class="fa-solid fa-indian-rupee-sign"></i><p>3,00,00,000</p></span>
+        <div class="days" >
+            <div><i class="fa-solid fa-clock"></i><p>36 Days left</p></div>
+            <div><i class="fa-solid fa-heart"></i><p>5152 Supporters</p></div>
+        </div>
+        <div class="scroll_icon">
+            <button><i class="fa-brands fa-square-facebook"></i>Share</button>
+            <button>Donate</button>
+        </div>
+    </div>
+    <!-- Swipper -->
+    
+    
     <p>Note: Some  Some fundraisers are not eligible for any tax deduction such as 80G, 501(c), etc.</p>
     <h1 class="head"> Start a Fundraiser in three simple steps</h1>
     <div id="video_steps" >
@@ -101,7 +128,7 @@
              </div>
         </div>
         <div>
-            <video src="https://www.ketto.org/assets/videos/screen_recording.webm" autoplay></video>
+            <video src="https://www.ketto.org/assets/videos/screen_recording.webm"  autoplay></video>
         </div>
     </div>
     <div id="start_btn">
@@ -262,22 +289,9 @@
         AML Policy |
         Use of cookies </p>
 </div>
+<h3 class="know_more">Know more about Ketto Crowdfunding Platform</h3>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div style="height:200px ;"></div>
+    <div style="height:70px ;"></div>
 </body>
 </html>
