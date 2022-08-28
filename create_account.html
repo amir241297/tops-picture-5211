@@ -1,0 +1,53 @@
+<html>
+    <head></head>
+    <link rel="stylesheet" href="navbar.css">
+    <link style="color: black;" rel="icon" href="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXbk3-vifU9eR19dvbXDscl00z33TPH5dok0QR-77a0Rq6ZHR7">
+    <body>
+      <style>
+         body
+       {
+         /* background:url(https://www.atyutka.com/wp-content/uploads/2020/11/Owl.jpg) */
+       }
+      </style>
+        
+        <div class="create_acc">
+            <h1>Start your fundraiser</h1>
+            <hr>
+             <button id="treatment">
+                <h4>Purpose of raising funds  
+                <select name="" id="select">
+                    <option value="fundraise"><h2>Medical Treatment</h2></option>
+                    <option value="NGO">NGO / Charity</option>
+                    <option value="others">Others Cause</option>
+                </select></h4>
+             </button>
+             <form action="">
+                <label for="">Name</label>
+                <input id="name" type="text" placeholder="Enter Name">
+                <label for=""> Name as mentioned in your Aadhar card</label>
+                <input id="mail" type="email" placeholder="Email Address">
+                <input id="password" type="password" placeholder="Create a Password" name="" id="">
+                <h3>Already have an account? <a href="sign_in.html">Login</a></h3>
+                <input type="submit" name="" class="next" value="Next">
+            </form>
+        </div>
+    </body>
+</html>
+<script>
+      let lsdata=JSON.parse(localStorage.getItem("User_data"))|| []
+       document.querySelector("form").addEventListener("submit",function()
+       {
+        event.preventDefault()
+           let Name=document.getElementById("name").value
+           let Email=document.getElementById("mail").value
+           let Password=document.getElementById("password").value
+          let obj={
+            Name,
+            Email,
+            Password,
+          }
+        lsdata.push(obj)
+        localStorage.setItem("User_data",JSON.stringify(lsdata))
+       })
+       
+</script>

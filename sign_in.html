@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link style="color: black;" rel="icon" href="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXbk3-vifU9eR19dvbXDscl00z33TPH5dok0QR-77a0Rq6ZHR7">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="navbar.css">
+    <!-- <script src="login.js"></script> -->
+</head>
+
+<body>
+   
+<div class="login">
+    <h1>Login</h1>
+    <form action="">
+        <input id="email" type="email/number" placeholder="Email/Mobile Number">
+        <input type="submit" value="Get OTP">
+    </form>
+    <button>Login via Password</button>
+    <h5>By continuing you agree to our <button>Terms of Service</button>and <button>Privacy Policy</button></h5>
+    <h3>Want to start a Fundraiser <a href="create_account.html">Click here</a> </h3>
+</div>
+
+</body>
+
+</html>
+<script>
+    let form=document.querySelector("form")
+    let get_lsdata=JSON.parse(localStorage.getItem("User_data")) || []
+form.addEventListener("submit",function()
+{
+   event.preventDefault()
+   let Email=document.querySelector("#email").value
+   
+   let update=false
+    get_lsdata.forEach(function(ele) {
+        // console.log(ele.email)
+        if(ele.Email===Email)
+        {
+        console.log()
+
+            update=true
+            // localStorage.setItem("signup",JSON.stringify(ele))
+            alert("signup successfull.")
+            window.location.href="Home_navbar.html"
+        
+        }
+    });
+    if(update===false)
+    {
+        alert("user not found...")
+    }
+})
+</script>
